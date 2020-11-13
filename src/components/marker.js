@@ -1,11 +1,11 @@
 import React from 'react'
 import { Marker } from '@react-google-maps/api'
 
-const MarkerBike = ({ key, lat, lng, handleMarkerClick }) => {
+const MarkerBike = ({ lat, lng, handleMarkerClick }) => {
 	return (
 		<>
 			<Marker
-				key={key}
+				// key={key}
 				position={{ lat: +`${lat}`, lng: +`${lng}` }}
 				icon={{
 					url: `/bike.svg`,

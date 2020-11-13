@@ -10,8 +10,12 @@ import DirectionsBikeIcon from '@material-ui/icons/DirectionsBike'
 const useStyles = makeStyles(theme =>
 	createStyles({
 		root: {
-			flexGrow: 1,
-			height: '9vh',
+			//flexGrow: 1,
+			width: '100vw',
+			position: 'absolute',
+			top: 0,
+
+			zIndex: 1,
 		},
 		menuButton: {
 			marginRight: theme.spacing(2),
@@ -38,7 +42,7 @@ const TopBar = () => {
 						<DirectionsBikeIcon />
 					</IconButton>
 					<Typography variant='h6' className={classes.title}>
-						Oslo sykkel monitor
+						Oslo By Sykkel monitoring
 					</Typography>
 				</Toolbar>
 			</AppBar>

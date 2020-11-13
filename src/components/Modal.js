@@ -33,6 +33,7 @@ const InfoModal = ({
 	docksAvailable,
 }) => {
 	const classes = useStyles()
+
 	return (
 		<>
 			<Modal
